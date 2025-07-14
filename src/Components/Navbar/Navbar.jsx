@@ -1,53 +1,72 @@
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu2Line } from "@remixicon/react";
+
 const Navbar = () => {
-  const [menu, openMenu] = useState(false);
-  const [showMenu, setShowmenu] = useState(true);
+  const [menu, setMenu] = useState(false);
+
   return (
-    <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-8 md:px-20">
+    <nav className="flex flex-wrap justify-between items-center text-white px-10 pt-8 md:px-20 relative">
       <span className="text-xl font-bold tracking-wide">Portfolio</span>
 
-            <ul
-        className={`${
-          menu ? "block" : "hidden"
-        }     mx-24 p-y2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opacity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-20`}
+      {/* Hamburger menu icon for mobile */}
+      <button
+        className="md:hidden block z-20"
+        onClick={() => setMenu((prev) => !prev)}
+        aria-label="Toggle menu"
       >
-        <a href="#About">
-          <li className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#7489da]">
+        {menu ? (
+          <RiCloseLine size={30} className="transition-all duration-300" />
+        ) : (
+          <RiMenu2Line size={30} className="transition-all duration-300" />
+        )}
+      </button>
+
+      {/* Navigation links */}
+      <ul
+        className={`
+          ${menu ? "flex" : "hidden"}
+          flex-col absolute top-16 left-0 w-full bg-transparent bg-opacity-90 rounded-b-xl text-right gap-6 py-6 pr-5
+          md:static md:flex md:flex-row md:gap-20 md:bg-transparent md:w-auto md:py-0 md:rounded-none md:items-center md:ml-0
+          transition-all duration-300
+        `}
+      >
+        <li>
+          <a
+            href="#About"
+            onClick={() => setMenu(false)}
+            className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#465697] cursor-pointer"
+          >
             About
-          </li>
-        </a>
-        <a href="#Experience">
-          <li className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#7489da]">
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Experience"
+            onClick={() => setMenu(false)}
+            className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#465697] cursor-pointer"
+          >
             Experience
-          </li>
-        </a>
-        <a href="#Projects">
-          <li className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#7489da]">
+          </a>
+        </li>
+        <li>
+          <a
+            href="#ProjectsHeading"
+            onClick={() => setMenu(false)}
+            className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#465697] cursor-pointer"
+          >
             Projects
-          </li>
-        </a>
-        <a href="#Footer">
-          <li className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#7489da]">
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Footer"
+            onClick={() => setMenu(false)}
+            className="text-md transition-all duration-300 p-1 md:p-0 hover:text-[#465697] cursor-pointer"
+          >
             Contact
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
-      {showMenu ? (
-        <RiMenu2Line
-          size={30}
-          className="md:hidden absolute right-10 top-6 transition-all duration-300"
-          onClick={() => {
-            openMenu(!menu);
-            setShowmenu(!showMenu);
-          }}
-        />
-      ) : (
-        <RiCloseLine
-          size={30}
-          className="md:hidden absolute right-10 top-6 transition-all duration-300"
-        />
-      )}
     </nav>
   );
 };

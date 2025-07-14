@@ -28,7 +28,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="mt-6 md:mt-10 text-white py-3 px-7 text-base md:text-lg hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+          <button className="mt-6 md:mt-10 text-white py-3 px-7 text-base md:text-lg hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-blue-400">
             Download CV
           </button>
         </a>
