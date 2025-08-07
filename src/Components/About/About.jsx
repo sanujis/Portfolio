@@ -27,7 +27,7 @@ const About = () => {
           <div>
             <div className="topic text-2xl font-bold mb-2 text-white">Graphic Design</div>
             <p className="text-base text-white">
-              I have experience in designing eye-catching flyers that effectively communicate messages.
+              I have experience in designing eye-catching flyers and captions that effectively communicate messages.
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ const About = () => {
           <div>
             <div className="topic text-2xl font-bold mb-2 text-white">Coding</div>
             <p className="text-base text-white">
-              I am proficient in multiple programming languages, including Python, Java, C, and C++.
+              I am proficient in a variety of programming languages and possess strong problem-solving skills.
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const About = () => {
           <div>
             <div className="topic text-2xl font-bold mb-2 text-white">Web Development</div>
             <p className="text-base text-white">
-              I specialize in web development, utilizing HTML, CSS, and JavaScript to create dynamic and responsive websites.
+              I have experience in building web applications, with a focus on functionality, responsiveness, and user experience.
             </p>
           </div>
         </div>

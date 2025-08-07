@@ -36,20 +36,8 @@ const Footer = () => {
             <p className="mb-4 text-sm md:text-base">
               Contact me today to discuss your ideas and requirements.
             </p>
-            <div className="flex gap-4 mt-4 justify-center md:justify-start">
-              <a href="mailto:sanujis1102@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
-                <MdOutlineEmail size={28} className="hover:text-gray-300 transition" />
-              </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <CiLinkedin size={28} className="hover:text-gray-300 transition" />
-              </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <FaGithub size={28} className="hover:text-gray-300 transition" />
-              </a>
-              <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <FaInstagram size={28} className="hover:text-gray-300 transition" />
-              </a>
-            </div>
+            
+            
           </div>
           {/* Contact Form */}
           <div className="flex-1 w-full max-w-md bg-white bg-opacity-10 rounded-xl p-6 shadow-lg">
@@ -95,9 +83,11 @@ const Footer = () => {
           </div>
         </div>
         {/* Footer copyright */}
-        <div className="w-full text-center mt-8 text-xs md:text-base opacity-80 bg-[#465697] py-3 rounded-none">
-          2024 All Rights Reserved
-        </div>
+        <footer className="w-full bg-[#465697] pt-7 pb-2 text-center text-white text-xs md:text-base">
+  © 2025 All Rights Reserved
+</footer>
+
+
       </div>
     </footer>
   );

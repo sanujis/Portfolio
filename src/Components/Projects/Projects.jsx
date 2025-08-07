@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import ProjectCard from "./ProjectCard";
 import airlineImg from "../../assets/airways.png"; 
 import deliveryImg from "../../assets/delivery.png";
 import healthImg from "../../assets/health.png";
+import travelImg from "../../assets/travelon.jpg"; 
+import houseImg from "../../assets/house.png";
+import gameImg from "../../assets/game.png";
 
 const projects = [
   {
@@ -27,25 +30,25 @@ const projects = [
     codeLink: "https://github.com/InduwaraRathnayake/iwb121-code-stormers.git",
   },
   {
-    title: "Wellness Tracking Website",
-    main: "Wellness 360 is a web application that analyzes health reports, provides insights, and helps users manage their wellness journey. This is built using React.js for the frontend and Ballerina for the backend.",
-    image: healthImg,
+    title: "Event Discovery Platform for Tourists",
+    main: "Travelon is a mobile app for tourists to discover local events. This helps users explore and connect with nearby events. This is built using Flutter for the frontend and integrates with a Firebase database.",
+    image: travelImg,
     demoLink: "https://your-demo-link.com",
     codeLink: "https://github.com/InduwaraRathnayake/iwb121-code-stormers.git",
   },
   {
-    title: "Wellness Tracking Website",
-    main: "Wellness 360 is a web application that analyzes health reports, provides insights, and helps users manage their wellness journey. This is built using React.js for the frontend and Ballerina for the backend.",
-    image: healthImg,
+    title: "House Price Prediction",
+    main: "House Price Prediction is a web application that predicts house prices based on various features. This is built using It is built using Python, Scikit-learn, NumPy, Flask, HTML, CSS, and JavaScript.",
+    image: houseImg,
     demoLink: "https://your-demo-link.com",
-    codeLink: "https://github.com/InduwaraRathnayake/iwb121-code-stormers.git",
+    codeLink: "https://github.com/sanujis/House-Price-Prediction",
   },
   {
-    title: "Wellness Tracking Website",
-    main: "Wellness 360 is a web application that analyzes health reports, provides insights, and helps users manage their wellness journey. This is built using React.js for the frontend and Ballerina for the backend.",
-    image: healthImg,
+    title: "Turn-Based Strategy Game",
+    main: "MysticMayhem is a fantasy-themed, turn-based strategy game where players command their own army to outmaneuver and eliminate opposing teams in a tactical arena battle. This is built using Java",
+    image: gameImg,
     demoLink: "https://your-demo-link.com",
-    codeLink: "https://github.com/InduwaraRathnayake/iwb121-code-stormers.git",
+    codeLink: "https://github.com/sanujis/MysticMayhem",
   },
 ];
 
