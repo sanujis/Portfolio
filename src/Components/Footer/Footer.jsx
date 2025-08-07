@@ -83,9 +83,10 @@ const Footer = () => {
           </div>
         </div>
         {/* Footer copyright */}
-        <footer className="w-full bg-[#465697] pt-7 pb-2 text-center text-white text-xs md:text-base">
-  © 2025 All Rights Reserved
+        <footer className="w-full text-center mt-8 font-semibold opacity-100 bg-[#465697] py-3">
+  Made with ❤️ using <span className="font-semibold">React</span> & <span className="font-semibold">Tailwind CSS</span>
 </footer>
+
 
 
       </div>

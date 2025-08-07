@@ -67,6 +67,7 @@ const Projects = () => {
     <div
       id="Projects"
       className="p-10 md:p-24 text-white"
+      data-aos="fade-up"
     >
       <h1
         id="ProjectsHeading"

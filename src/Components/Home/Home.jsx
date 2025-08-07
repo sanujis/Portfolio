@@ -18,9 +18,12 @@ const Home = () => {
       className="w-full min-h-screen bg-[#171d32] flex items-center justify-center relative overflow-hidden"
     >
       {/* Content wrapper with negative margin to move content up */}
-      <div className="text-white flex flex-col md:flex-row w-full items-center md:items-start p-6 md:p-16 lg:p-24 -mt-12">
+      <div className="text-white flex flex-col md:flex-row w-full items-center md:items-start p-6 md:p-16 lg:p-24">
         {/* Image on the left */}
-        <div className="relative md:mr-12 flex-shrink-0 flex justify-center w-full md:w-auto mt-14">
+        <div
+  className="relative md:mr-12 flex-shrink-0 flex justify-center w-full md:w-auto mt-14"
+  data-aos="fade-up"
+>
           <img
             className="w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-full shadow-lg border-4 border-white"
             src={MyImage}
@@ -52,7 +55,7 @@ const Home = () => {
             <a href="https://github.com/sanujis" target="_blank" rel="noopener noreferrer">
               <FaGithub size={28} className="hover:text-blue-400 transition duration-300" />
             </a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sanuji-samarakoon-81a45a294/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={28} className="hover:text-blue-400 transition duration-300" />
             </a>
             <a href="https://medium.com/@sanujis1102" target="_blank" rel="noopener noreferrer">

@@ -7,7 +7,7 @@ const iconStyle = "transition-transform duration-300 hover:scale-125 drop-shadow
 
 const Experience = () => {
   return (
-    <div id="Experience" className="w-full mt-10 px-4 scroll-mt-10">
+    <div id="Experience" className="w-full mt-10 px-4 scroll-mt-10" data-aos="fade-up">
       <h1 className="text-2xl md:text-4xl text-white font-bold mb-12 text-center mt-24">Experience</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
         {/* Languages */}
